@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Federant&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tapestry&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lekton:ital@1&display=swap');
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.container{
+    display: flex;
+}
+.sidebar{
+    background-color:  #47424426;
+    width: 200px;
+    height: 100vh;
+}
+.sidebar nav li{
+    list-style: none;
+    font-size: 25px;
+    padding: 50px 0px;
+    font-family: 'Cinzel', serif;
+    display: flex;
+    justify-content: center;
+}
+.sidebar nav li a{
+    color: rgb(14, 15, 15);
+    text-decoration: none;
+    align-items: center;
+    display: flex;
+}
+.main{
+    width: 90vw;
+    background-image: url("./pexels-photo-1166644.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.infocontainer{
+   /* background-color: rgb(155, 180, 225);*/
+    width: 80vw;
+    height: 60vh;
+    margin: auto;
+    margin-top: 60px;
+}
+.devinfo{
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+}
+.infohello{
+    font-size: 40px;
+    font-family: 'Tapestry', cursive;
+}
+.infoname{
+    font-size: 55px;
+    font-weight: bold;
+    font-family: 'Ubuntu Mono', monospace;
+}
+.infoabout{
+    font-size: 40px;
+    font-family: 'Tapestry', cursive;
+    
+}
+.infoaboutmore{
+    margin-top: 10px;
+    font-family: 'Federant', cursive;
+}
+.infobutton button{
+    border-radius: 9px;
+    padding: 15px 30px;
+    margin-top: 15px;
+    font-size: 15px;
+    cursor: pointer;
+    font-family: 'Tapestry', cursive;
+}
+.infobutton button a{
+    text-decoration: none;
+}
+.infobutton button:hover {
+    background-color: rgba(67, 67, 73, 0.414);
+}
+.devpic img{
+    margin-top: -40px;
+    height: 60vh;
+}
+.contactinfocontainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+.headcontactme{
+    font-size: 40px;
+    font-family: 'Tapestry', cursive;
+   
+}
+.contactinfocontainer label{
+    margin-top: 20px;
+    font-family: 'Cinzel', serif;
+    
+}
+.contactinfocontainer form{
+    padding: 20px 30px;
+}
+.contactinfocontainer input{
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 3px;
+}
+form .mb-3{
+    margin-top: 20px;
+}
+
+.btn{
+    border-radius: 9px;
+    padding: 15px 30px;
+    margin-top: 15px;
+    font-size: 15px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: rgba(67, 67, 73, 0.414);
+}
+.introcontainer{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 50px;
+}
+.introcontainer div h1{
+    font-family: 'Cinzel', serif;
+}
+.introcontainer div p{
+    margin-top: 30px;
+    width: 50vw;
+    font-family: 'Lekton', sans-serif;
+    font-size: 22px;
+}
+.skilltag{
+
+    display: flex;
+    flex-direction: row;
+}
+
+.blogcontainer{
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    padding-top: 20px;
+}
+.blogsitem{
+    padding: 20px 20px;
+}
+.blogsitem h2{
+    margin-bottom: 10px;
+    font-family: 'Cinzel', serif;
+}
+.blogsitem p{
+    font-family: 'Lekton', sans-serif;
+}
+.sercontainer{
+    display: flex;
+    flex-direction: row;
+   justify-content: space-between;
+   margin-left: 110px;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    margin-right: 100px;
+    padding-top: 80px;
+    justify-content: center;
+    
+}
+.card h4{
+    display: flex;
+    font-size: 30px;
+    justify-content: center;
+    font-family: 'Cinzel', serif;
+}
+.card img{
+    width: 200px;
+    height: 200px;
+}
+.serviceshead{
+    font-size: larger;
+    display: flex;
+    margin-top: 60px;
+    justify-content: center;
+    font-family: 'Cinzel', serif;
+}

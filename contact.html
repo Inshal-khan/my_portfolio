@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inshal Portfolio</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./view.js">
+
+    
+</head>
+
+<body>
+    <div class="container">
+    <div class="sidebar">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="intro.html">Cover Letter</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
+
+            </ul>
+        </nav>
+    </div>
+    <div class="main">
+       <div class="contactinfocontainer">
+         <div class="headcontactme"><h1>Contact Me</h1></div>
+        <div class="partdivide">
+            <div class="contactleft">
+            </div>
+            <div class="contactright">
+              <form>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Fist Name </label><br>
+                    <input type="text" class="form-control" id="exampleInputname"  onchange="stringCheck()">
+                  </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Last Name</label><br>
+                    <input type="text" class="form-control" id="examplelastName" >
+                  </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Mobile Number</label><br>
+                    <input type="number" class="form-control" id="exampleInputnumber" >
+                  </div>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Email address</label><br>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" >
+                  <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Password</label><br>
+                  <input  type="password" class="form-control" id="exampleInputPassword" >
+                </div>
+                <button class="btn" type="submit" onclick="submitbut()">Submit</button>
+              </form></div>
+        </div>
+       </div>
+    </div>
+</div>
+<script>
+  var emails = [];
+  function submitbut(){
+    // validation method for condition
+      let name = document.getElementById("exampleInputname").value;
+      let lastName = document.getElementById("examplelastName").value;
+      let number= document.getElementById("exampleInputnumber").value;
+      let email= document.getElementById("exampleInputEmail1").value;
+      let password = document.getElementById("exampleInputPassword").value;
+
+      if(name == "" || lastName == ""||  password == "" ||  number ==""  || email == ""){
+          alert("Please fill all fields ")
+      }else {
+          alert("Thank you for submiting form \nMy team contact you soon \n\nHave A Nice Day")
+      }
+       return true;
+  }
+  function stringCheck(){
+    var st = document.getElementById("exampleInputname").value;
+    var letter = st.charAt(0);
+    if (letter == letter.toLowerCase()) {
+    alert ('The first letter should be capital eg: Inshal');
+    }
+    // alert(letter)
+  }
+
+  function EmailValidation(email){
+      
+  }
+
+
+</script>
+</body>
+</html>
